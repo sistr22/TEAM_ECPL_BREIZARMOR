@@ -1,0 +1,25 @@
+@import "@material/button/mdc-button";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+$primary-color-dark:   #689F38;
+$primary-color:        #8BC34A;
+$primary-color-light:  #DCEDC8;
+$primary-color-text:   #212121;
+$accent-color:         #FFC107;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+
+body {
+  margin: 0px;
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color($primary-color);
+}
+
+.foo-button {
+  @include mdc-button-ink-color(teal);
+  @include mdc-states(teal);
+}

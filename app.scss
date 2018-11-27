@@ -40,6 +40,11 @@ body {
   width: 630px;
 }
 
+.card-pilote {
+  width: 315px;
+}
+
+
 .drawer-frame-root {
   display: flex;
   height: 100vh;
@@ -54,4 +59,10 @@ body {
   display: flex;
   justify-content: center;
   padding: 12px 0px;
+}
+
+.profil-card__media {
+  position: absolute;
+  width: 110px;
+  height: 110px;
 }

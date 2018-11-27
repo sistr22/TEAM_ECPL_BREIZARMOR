@@ -1,5 +1,9 @@
 @import "@material/button/mdc-button";
 @import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/card/mdc-card";
+@import "@material/typography/mdc-typography";
 
 $primary-color-dark:   #689F38;
 $primary-color:        #8BC34A;
@@ -22,4 +26,32 @@ body {
 .foo-button {
   @include mdc-button-ink-color(teal);
   @include mdc-states(teal);
+}
+
+body {
+  display: block;
+}
+
+.mdc-drawer-app-content {
+  width: 100%;
+}
+
+.card-intro {
+  width: 630px;
+}
+
+.drawer-frame-root {
+  display: flex;
+  height: 100vh;
+}
+
+.drawer-main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0px;
 }

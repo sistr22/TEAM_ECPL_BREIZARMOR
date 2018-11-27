@@ -42,8 +42,8 @@ body {
 
 .card-pilote {
   width: 315px;
+  margin: 8px;
 }
-
 
 .drawer-frame-root {
   display: flex;
@@ -58,7 +58,8 @@ body {
 .cards {
   display: flex;
   justify-content: center;
-  padding: 12px 0px;
+  padding: 8px 0px;
+  flex-wrap: wrap;
 }
 
 .profil-card__media {

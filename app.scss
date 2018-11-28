@@ -61,6 +61,19 @@ body {
   justify-content: center;
   padding: 8px 0px;
   flex-wrap: wrap;
+  max-width: 700px;
+  margin: auto;
+}
+
+.cards table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.cards table tr:nth-child(even) {
+  background-color: #EEFEEB;
+}
+.cards table tr:nth-child(odd) {
+  background-color: $primary-color-light;
 }
 
 .profil-card__media {
@@ -72,6 +85,8 @@ body {
 .contacts {
   display: flex;
   flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
 }
 
 .contact {
@@ -95,4 +110,27 @@ body {
   margin: auto;
   display: inline-flex;
   align-items: center;
+}
+
+.finance-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.card__primary {
+  padding: 0 0 0 8px;
+}
+.card__secondary {
+  padding: 0 8px 8px 8px;
+}
+
+.finance-action {
+  max-width: 200px;
+  background-color: $primary-color-dark;
+  border-color: $accent-color;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 4px;
 }
